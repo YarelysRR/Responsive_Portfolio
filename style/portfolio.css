@@ -1,5 +1,5 @@
 :root {
-  --accent-color: #6c63ff;
+  --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
@@ -12,6 +12,11 @@ body {
 
 h1 {
   font-size: 96px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 64px;
 }
 
 h1,
@@ -27,6 +32,8 @@ h6 {
 
 p {
   font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .hero {
@@ -43,17 +50,30 @@ p {
   font-family: var(--heading-font-family);
   font-weight: normal;
   font-size: 24px;
-  line-height: 2;
+  line-height: 1.5;
   color: #272142;
 }
 
-.btn-contact {
-  background: var(--accent-color);
+.btn-branding {
+  background: var(--branding-color);
   border-radius: 4px;
   color: white;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+
+.btn-branding-outline {
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+}
+
+.project-description {
+  padding: 120px 60px;
 }
 
 .nav_links {
@@ -127,32 +147,19 @@ p {
   font-size: 25px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 960px) {
   h1 {
-    font-size: 48px;
-    line-height: 1.5;
+    font-size: 44px;
+    line-height: 2;
   }
-
   h2 {
-    font-size: 32px;
+    font-size: 44px;
   }
-  .mobile,
-  .launch_button {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .hero {
+    padding: 80px 20px;
   }
-  .launch_button a {
-    width: 300px;
+  .project-description {
+    padding: 0;
     text-align: center;
-  }
-
-  .img-mob {
-    display: none;
-  }
-  .dropdown-menu {
-    position: absolute;
   }
 }
