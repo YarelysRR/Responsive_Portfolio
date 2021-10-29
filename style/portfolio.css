@@ -1,38 +1,59 @@
 :root {
-  --primary-color: white;
-  --secondary-color: blue;
+  --accent-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
   --box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  background-color: black;
+  font-family: var(--default-font-family);
 }
 
 h1 {
-  font-size: 60px;
-  font-weight: bold;
-  margin: 0;
+  font-size: 96px;
 }
-H1,
+
+h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   color: black;
-  text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
 p {
-  color: var(--primary-color);
-  margin: 0;
-  line-height: 1.5;
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
 }
 
 .hero {
-  background: #f9f7fe;
+  background: var(--secondary-color);
   text-align: center;
+  padding: 160px 20px;
+}
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2;
+  color: #272142;
+}
+
+.btn-contact {
+  background: var(--accent-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
 
 .nav_links {
@@ -97,7 +118,6 @@ p {
 }
 
 .footer_links {
-  background-color: rgb(59, 2, 2);
   padding: 20px;
 }
 
