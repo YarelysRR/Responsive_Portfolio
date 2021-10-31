@@ -76,22 +76,12 @@ p {
   padding: 120px 60px;
 }
 
-.nav_links {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
+.navbar-custom {
+  background-color: var(--secondary-color);
 }
 
-.nav_links a {
-  padding: 20px 15px;
-  text-decoration: none;
-  margin: 20px;
-  border-radius: 4px;
-}
-
-.about_me {
-  border: solid 1px var(--primary-color);
-  color: var(--primary-color);
+.logo_size {
+  max-width: 100px;
 }
 
 .img-size {
@@ -102,6 +92,11 @@ p {
   height: 95%;
 }
 
+.profile-pict {
+  max-width: 70%;
+  border-radius: 20px;
+}
+
 .contact_me,
 .lbut_text {
   background: var(--secondary-color);
@@ -110,17 +105,6 @@ p {
 }
 
 .contact_me:hover {
-  color: white;
-}
-
-.launch_button a {
-  padding: 25px 15px;
-  text-decoration: none;
-  margin: 10px;
-  border-radius: 4px;
-}
-
-.lbut_text:hover {
   color: white;
 }
 
@@ -137,12 +121,34 @@ p {
   color: white;
 }
 
+.inquiry,
+.about-inquiry {
+  background: var(--secondary-color);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.inquiry-button {
+  float: right;
+}
+
+.inquiry-button:hover {
+  color: white;
+}
+
+.about-inquiry {
+  margin-right: 180px;
+}
+
 .footer_links {
-  padding: 20px;
+  text-align: center;
+  padding: 160px 20px;
 }
 
 .icons {
-  color: black;
+  color: var(--branding-color);
   padding: 20px;
   font-size: 25px;
 }
