@@ -80,8 +80,17 @@ p {
   background-color: var(--secondary-color);
 }
 
+.active {
+  color: var(--branding-color) !important;
+}
+
+.nav-item {
+  padding: 0 10px;
+  line-height: 14px;
+}
+
 .logo_size {
-  max-width: 100px;
+  max-width: 150px;
 }
 
 .img-size {
@@ -93,7 +102,7 @@ p {
 }
 
 .content-container {
-  padding: 120px 60px;
+  padding: 100px 20px;
 }
 
 .content {
