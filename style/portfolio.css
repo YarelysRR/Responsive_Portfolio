@@ -19,6 +19,10 @@ h2 {
   font-size: 64px;
 }
 
+h4 {
+  font-size: 48px;
+}
+
 h1,
 h2,
 h3,
@@ -143,49 +147,42 @@ p {
   color: white;
 }
 
-.myemail_link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  text-decoration: none;
-  font-size: 28px;
+footer {
+  margin: 60px 0;
 }
-
-.myemail_link:hover {
-  text-decoration: underline;
-  color: white;
-}
-
-.inquiry,
-.about-inquiry {
+footer .contact-box {
   background: var(--secondary-color);
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 50px;
+  border-radius: 10px;
+  padding: 30px 120px;
 }
 
-.inquiry-button {
-  float: right;
+footer.contact-box p {
+  margin: 0;
 }
 
-.inquiry-button:hover {
-  color: white;
+footer .myemail_link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
 }
 
-.about-inquiry {
-  margin-right: 180px;
-}
-
-.footer_links {
-  text-align: center;
-  padding: 160px 20px;
-}
-
-.icons {
+footer .myemail_link:hover {
   color: var(--branding-color);
-  padding: 20px;
-  font-size: 25px;
+}
+footer .sm-links a {
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  border-radius: 50%;
+  margin: 0 20px;
+  padding: 10px 14px;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+footer .sm-links a:hover {
+  color: white;
+  background: var(--branding-color);
 }
 
 @media (max-width: 960px) {
@@ -196,6 +193,10 @@ p {
   h2 {
     font-size: 44px;
   }
+  h4 {
+    font-size: 26px;
+  }
+
   .hero {
     padding: 80px 20px;
   }
@@ -206,5 +207,8 @@ p {
   .content {
     padding: 0;
     text-align: center;
+  }
+  footer.contact-box {
+    padding: 30px;
   }
 }
